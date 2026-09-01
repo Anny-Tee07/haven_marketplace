@@ -1,0 +1,395 @@
+    :root {
+        --primary-color: #1E293B;
+        --accent-color: #B45309;
+        --tertiary-color: #FCFBF7;
+        --neutral-color: #64748B;
+        --text-color: #000000;
+        --white: #ffffff;
+        --border-radius: 12px;
+    }
+
+    body {
+        padding-top: 76px;
+        font-family: "Inter", sans-serif;
+    }
+
+    .navbar-brand {
+        color: var(--primary-color);
+        font-family: "Playfair", serif;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+    }
+
+    .navbar {
+        min-height: 76px;
+    }
+
+    /* 
+    .nav-link:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--accent-color);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 5px;
+        transition: width 0.8s ease;
+    } */
+
+    .nav-link {
+        position: relative;
+    }
+
+    .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--accent-color);
+        transition: width 0.8s ease;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+    .home {
+        position: relative;
+        background-image: url("assets/haven_home_image_1.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 85vh;
+        display: flex;
+        align-items: center;
+        padding: 3rem 0;
+    }
+
+    .home::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .home .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .home-copy {
+        margin-bottom: 3rem;
+    }
+
+    .home-copy h1 {
+        font-family: "Playfair", serif;
+        font-size: clamp(2.2rem, 4vw, 4.5rem);
+        line-height: 1.1;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 1rem;
+    }
+
+    .home-copy h3 {
+        font-family: "playfair", serif;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        font-weight: 400;
+        color: var(--white);
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .home-search {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 18px;
+        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
+        padding: 1.5rem;
+    }
+
+    .home-search-buy:hover,
+    .home-search-sell:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--accent-color);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 5px;
+    }
+
+    .top-text h5 {
+        color: var(--primary-color);
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .home-search hr {
+        margin: 1rem 0 1.25rem;
+        opacity: 0.3;
+    }
+
+    .form-control,
+    .btn-light,
+    .btn-primary {
+        border-radius: 12px;
+        min-height: 48px;
+        font-size: 0.95rem;
+    }
+
+    .form-control::placeholder {
+        color: #999;
+    }
+
+    .btn-primary {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus {
+        background-color: #9a4705;
+        border-color: #9a4705;
+    }
+
+    .home-search .dropdown-toggle::after {
+        margin-left: 1rem;
+    }
+
+    .featured-properties1 {
+        font-weight: 700;
+        color: var(--primary-color);
+        font-family: "Playfair", serif;
+    }
+
+    .featured-properties2 {
+        font-family: "Inter", sans-serif;
+        color: var(--neutral-color);
+    }
+
+    .property-price {
+        color: var(--accent-color);
+        font-weight: 600;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .property-img {
+        transition: transform 0.3s ease;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        display: block;
+    }
+
+    .card:hover .property-img {
+        transform: scale(1.05);
+    }
+
+    .haven-footer {
+        background-color: #081528;
+        color: white;
+    }
+
+    .footer-logo {
+        font-family: "Playfair", serif;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .footer-text {
+        color: #91a2ba;
+        max-width: 280px;
+        line-height: 1.6;
+    }
+
+    .footer-heading {
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 14px;
+    }
+
+    .footer-links a {
+        color: #91a2ba;
+        text-decoration: none;
+        transition: 0.3s ease;
+    }
+
+    .footer-links a:hover {
+        color: white;
+    }
+
+    .footer-socials {
+        display: flex;
+        gap: 15px;
+    }
+
+    .social-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color: #1b2b41;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-decoration: none;
+        transition: 0.3s ease;
+    }
+
+    .social-icon:hover {
+        background-color: #c98b55;
+        color: white;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid #26364a;
+        margin-top: 50px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        color: #71849e;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .btn-haven {
+        background-color: var(--accent-color);
+        border: 2px solid var(--accent-color);
+        color: black;
+        border-radius: 10px;
+        padding: 0.5rem 1.25rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: 0.3s ease;
+        white-space: nowrap;
+        display: inline-block;
+    }
+
+    .btn-haven:hover {
+        background-color: var(--accent-color);
+        color: var(--white);
+    }
+
+    .btn-haven:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(180, 83, 9, 0.2);
+    }
+
+    @media (max-width: 991.98px) {
+        .home {
+            padding: 2.5rem 0;
+            min-height: 80vh;
+        }
+
+        .navbar-collapse {
+            padding-top: 1rem;
+        }
+
+        .navbar-nav {
+            align-items: flex-start !important;
+            gap: 1rem !important;
+        }
+
+        .home-search {
+            padding: 1.25rem;
+        }
+
+        .home-copy {
+            margin-bottom: 2rem;
+        }
+
+        .featured-properties1 {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .home-search .row {
+            gap: 1rem !important;
+        }
+
+        .home-search .col-md-12 {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        body {
+            padding-top: 64px;
+        }
+
+        .navbar {
+            min-height: 64px;
+        }
+
+        .navbar-brand {
+            font-size: 1.25rem;
+        }
+
+        .home {
+            padding: 2rem 0;
+            min-height: 75vh;
+        }
+
+        .home-copy h1 {
+            margin-bottom: 0.75rem;
+            font-size: 1.75rem;
+        }
+
+        .home-copy h3 {
+            font-size: 0.95rem;
+        }
+
+        .home-search {
+            padding: 1rem;
+        }
+
+        .home-search .row {
+            gap: 0.75rem !important;
+        }
+
+        .form-control,
+        .btn-light,
+        .btn-primary {
+            min-height: 44px;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            margin-top: 0.5rem;
+        }
+
+        .featured-properties1 {
+            font-size: 1.5rem;
+        }
+
+        .featured-properties2 {
+            font-size: 0.9rem;
+        }
+
+        .property-price {
+            font-size: 0.9rem;
+        }
+
+        .card-title {
+            font-size: 1rem;
+        }
+
+        .card-body {
+            padding: 1rem !important;
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+        }
+    }
