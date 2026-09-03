@@ -4,23 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Haven Marketplace - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="haven.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="haven.css">
 
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #212529;
+        }
+
+        .font-serif {
+            font-family: Georgia, serif;
+        }
+
+        /* Custom form elements */
+        .form-control,
+        .form-select {
+            padding: 0.65rem 1rem;
+            font-size: 0.9rem;
+            border: 1px solid #dee2e6;
+            background-color: #fdfdfd;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #212529;
+            box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.1);
+        }
+
+        .form-check-input:checked {
+            background-color: #111827;
+            border-color: #111827;
+        }
+
+        /* Button override */
+        .btn-dark {
+            background-color: #111827;
+            border-color: #111827;
+        }
+
+        .btn-dark:hover {
+            background-color: #000000;
+            border-color: #000000;
+        }
+    </style>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm py-3">
         <div class="container-fluid px-3 px-lg-4">
-            <a class="navbar-brand fw-bolder" href="#">HAVEN</a>
+            <a class="navbar-brand fw-bolder font-serif" href="index.html">Haven</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -30,23 +72,268 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center gap-1 gap-lg-3">
-                    <li class="nav-item"><a class="nav-link active fw-medium" href="buy.html">Buy</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium" href="sell.html">Sell</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium" href="land.html">Land</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium" href="index.html">Explore</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium" href="favourites.html">Favourites</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium active text-dark" href="buy.html">Buy</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium text-dark" href="sell.html">Sell</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="rent.html">Rent</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium text-dark" href="land.html">Land</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium text-dark" href="index.html">Explore</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium text-dark" href="favorites.html">Favorites</a>
+                    </li>
                 </ul>
 
-                <div class="d-flex align-items-center gap-2 gap-lg-3">
-                    <button type="button" class="btn btn-dark btn-sm">List Your Property</button>
-                    <i class="bi bi-person fs-5"></i>
+                <div class="d-flex align-items-center justify-content-center gap-3 mt-3 mt-lg-0">
+                    <a href="property.html" class="btn btn-dark btn-sm rounded-pill px-3 py-2">List Your Property</a>
+                    <a href="#" class="text-dark fs-5" aria-label="User Profile"><i class="bi bi-person"></i></a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <main class="container py-5 mt-2">
+
+        <section class="mb-5 pt-4">
+            <h2 class="display-5 fw-bold font-serif mb-2">Discover Your Haven.</h2>
+            <p class="text-muted fs-5">Explore our curated selection of premium properties across prime
+                locations.<br>Find the perfect architectural masterpiece to call home.</p>
+        </section>
+
+        <div class="row g-4">
+
+            <div class="col-lg-3">
+                <div class="card border-0 shadow-sm rounded-4 p-4 sticky-top" style="top: 100px;">
+
+                    <div class="mb-4">
+                        <label class="form-label text-muted small fw-bold">Location</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-end-0 text-muted"><i
+                                    class="bi bi-geo-alt"></i></span>
+                            <input type="text" class="form-control border-start-0 ps-0" placeholder="Lagos, Abuja...">
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label text-muted small fw-bold">Price Range (₦)</label>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="₦ Min">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="₦ Max">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="form-label text-muted small fw-bold mb-3">Property Type</label>
+                        <div class="d-flex flex-column gap-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="villa">
+                                <label class="form-check-label" for="villa">Villa</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="apartment" checked>
+                                <label class="form-check-label" for="apartment">Apartment</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="penthouse">
+                                <label class="form-check-label" for="penthouse">Penthouse</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <span class="text-muted fw-medium">Showing <strong>24</strong> exclusive properties</span>
+                    <div class="d-flex align-items-center gap-2">
+                        <!-- <span class="text-muted small">SORT BY:</span>
+                        <select class="form-select form-select-sm border-0 bg-transparent fw-bold shadow-none"
+                            style="width: auto;">
+                            <option selected>Recommended</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select> -->
+                    </div>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                            <div class="position-relative">
+                                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"
+                                    class="card-img-top object-fit-cover" style="height: 260px;" alt="Property">
+                                <span
+                                    class="badge bg-dark position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-normal">New</span>
+                                <button
+                                    class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 p-2 shadow-sm d-flex align-items-center justify-content-center"
+                                    style="width: 36px; height: 36px;" aria-label="Favorite"><i
+                                        class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="card-body p-4">
+                                <p class="text-muted small mb-1"><i class="bi bi-geo-alt"></i> Ikoyi, Lagos</p>
+                                <div class="d-flex gap-3 text-muted small mb-3">
+                                    <span><i class="bi bi-door-open"></i> 4</span>
+                                    <span><i class="bi bi-water"></i> 4.5</span>
+                                    <span><i class="bi bi-rulers"></i> 420 sqm</span>
+                                </div>
+                                <h4 class="h5 fw-bold font-serif">The Elios</h4>
+                                <p class="text-dark fw-bold mb-0">₦850,000,000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                            <div class="position-relative">
+                                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+                                    class="card-img-top object-fit-cover" style="height: 260px;" alt="Property">
+                                <button
+                                    class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 p-2 shadow-sm d-flex align-items-center justify-content-center"
+                                    style="width: 36px; height: 36px;" aria-label="Favorite"><i
+                                        class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="card-body p-4">
+                                <p class="text-muted small mb-1"><i class="bi bi-geo-alt"></i> Maitama, Abuja</p>
+                                <div class="d-flex gap-3 text-muted small mb-3">
+                                    <span><i class="bi bi-door-open"></i> 5</span>
+                                    <span><i class="bi bi-water"></i> 6</span>
+                                    <span><i class="bi bi-rulers"></i> 750 sqm</span>
+                                </div>
+                                <h4 class="h5 fw-bold font-serif">The Onyx Enclave</h4>
+                                <p class="text-dark fw-bold mb-0">₦1,380,000,000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                            <div class="position-relative">
+                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+                                    class="card-img-top object-fit-cover" style="height: 260px;" alt="Property">
+                                <button
+                                    class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 p-2 shadow-sm d-flex align-items-center justify-content-center"
+                                    style="width: 36px; height: 36px;" aria-label="Favorite"><i
+                                        class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="card-body p-4">
+                                <p class="text-muted small mb-1"><i class="bi bi-geo-alt"></i> Victoria Island, Lagos
+                                </p>
+                                <div class="d-flex gap-3 text-muted small mb-3">
+                                    <span><i class="bi bi-door-open"></i> 6</span>
+                                    <span><i class="bi bi-water"></i> 7</span>
+                                    <span><i class="bi bi-rulers"></i> 900 sqm</span>
+                                </div>
+                                <h4 class="h5 fw-bold font-serif">Villa Novara</h4>
+                                <p class="text-dark fw-bold mb-0">₦1,200,000,000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                            <div class="position-relative">
+                                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+                                    class="card-img-top object-fit-cover" style="height: 260px;" alt="Property">
+                                <button
+                                    class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 p-2 shadow-sm d-flex align-items-center justify-content-center"
+                                    style="width: 36px; height: 36px;" aria-label="Favorite"><i
+                                        class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="card-body p-4">
+                                <p class="text-muted small mb-1"><i class="bi bi-geo-alt"></i> Eko Atlantic, Lagos</p>
+                                <div class="d-flex gap-3 text-muted small mb-3">
+                                    <span><i class="bi bi-door-open"></i> 3</span>
+                                    <span><i class="bi bi-water"></i> 3.5</span>
+                                    <span><i class="bi bi-rulers"></i> 350 sqm</span>
+                                </div>
+                                <h4 class="h5 fw-bold font-serif">The Horizon Penthouse</h4>
+                                <p class="text-dark fw-bold mb-0">₦650,000,000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="haven-footer mt-5">
+        <div class="container py-5">
+
+            <div class="row gy-4">
+
+                <!-- Haven -->
+                <div class="col-lg-4">
+                    <h3 class="footer-logo">Haven</h3>
+
+                    <p class="footer-text">
+                        Elevating the standard of real estate search
+                        through curated properties and exceptional design.
+                    </p>
+                </div>
+
+
+                <!-- Company -->
+                <div class="col-6 col-lg-2">
+                    <h6 class="footer-heading">Company</h6>
+
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- Support -->
+                <div class="col-6 col-lg-3">
+                    <h6 class="footer-heading">Support</h6>
+
+                    <ul class="footer-links">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- Connect -->
+                <div class="col-lg-3">
+                    <h6 class="footer-heading">Connect</h6>
+
+                    <div class="footer-socials">
+
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-share"></i>
+                        </a>
+
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Bottom -->
+            <div class="footer-bottom">
+                <p>© 2026 Haven Real Estate. All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
