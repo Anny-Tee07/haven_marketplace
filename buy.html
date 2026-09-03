@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haven Marketplace - Home</title>
+    <title>Haven Marketplace - Buy a Property</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,55 +14,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="haven.css">
-
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            color: #212529;
-        }
-
-        .font-serif {
-            font-family: Georgia, serif;
-        }
-
-        /* Custom form elements */
-        .form-control,
-        .form-select {
-            padding: 0.65rem 1rem;
-            font-size: 0.9rem;
-            border: 1px solid #dee2e6;
-            background-color: #fdfdfd;
-        }
-
-        .form-control:focus,
-        .form-select:focus {
-            border-color: #212529;
-            box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.1);
-        }
-
-        .form-check-input:checked {
-            background-color: #111827;
-            border-color: #111827;
-        }
-
-        /* Button override */
-        .btn-dark {
-            background-color: #111827;
-            border-color: #111827;
-        }
-
-        .btn-dark:hover {
-            background-color: #000000;
-            border-color: #000000;
-        }
-    </style>
 </head>
 
-<body class="bg-light">
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm py-3">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
         <div class="container-fluid px-3 px-lg-4">
-            <a class="navbar-brand fw-bolder font-serif" href="index.html">Haven</a>
+            <a class="navbar-brand fw-bolder" href="index.html">HAVEN</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -72,18 +30,17 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center gap-1 gap-lg-3">
-                    <li class="nav-item"><a class="nav-link fw-medium active text-dark" href="buy.html">Buy</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium text-dark" href="sell.html">Sell</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium active" href="buy.html">Buy</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="sell.html">Sell</a></li>
                     <li class="nav-item"><a class="nav-link fw-medium" href="rent.html">Rent</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium text-dark" href="land.html">Land</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium text-dark" href="index.html">Explore</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium text-dark" href="favorites.html">Favorites</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="land.html">Land</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="index.html">Explore</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="favourites.html">Favourites</a></li>
                 </ul>
 
-                <div class="d-flex align-items-center justify-content-center gap-3 mt-3 mt-lg-0">
-                    <a href="property.html" class="btn btn-dark btn-sm rounded-pill px-3 py-2">List Your Property</a>
-                    <a href="#" class="text-dark fs-5" aria-label="User Profile"><i class="bi bi-person"></i></a>
+                <div class="d-flex align-items-center gap-2 gap-lg-3">
+                    <a href="property.html" class="btn btn-dark btn-sm">List Your Property</a>
+                    <i class="bi bi-person fs-5"></i>
                 </div>
             </div>
         </div>

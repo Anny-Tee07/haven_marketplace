@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Haven Marketplace - Land for Sale</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="haven.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="haven.css">
     <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
 
 </head>
@@ -20,7 +20,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
         <div class="container-fluid px-3 px-lg-4">
-            <a class="navbar-brand fw-bolder" href="#">HAVEN</a>
+            <a class="navbar-brand fw-bolder" href="index.html">HAVEN</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -32,26 +32,398 @@
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center gap-1 gap-lg-3">
                     <li class="nav-item"><a class="nav-link fw-medium" href="buy.html">Buy</a></li>
                     <li class="nav-item"><a class="nav-link fw-medium" href="sell.html">Sell</a></li>
-                    <li class="nav-item"><a class="nav-link active fw-medium" href="land.html">Land</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="rent.html">Rent</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium active" href="land.html">Land</a></li>
                     <li class="nav-item"><a class="nav-link fw-medium" href="index.html">Explore</a></li>
                     <li class="nav-item"><a class="nav-link fw-medium" href="favourites.html">Favourites</a></li>
                 </ul>
 
                 <div class="d-flex align-items-center gap-2 gap-lg-3">
-                    <button type="button" class="btn btn-dark btn-sm">List Your Property</button>
+                    <a href="property.html" class="btn btn-dark btn-sm">List Your Property</a>
                     <i class="bi bi-person fs-5"></i>
                 </div>
             </div>
         </div>
     </nav>
 
-    <section>
-        <h1>THIS PAGE IS NOT AVAILABLE YET!! <br>
-            Explore other sections of our website.</h1>
-    </section>
+    <section class="listing-section">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        <div class="container">
+
+            <div class="listing-header">
+
+                <div>
+                    <h1 class="listing-title">
+                        Prime Land Plots
+                    </h1>
+
+                    <p class="listing-description">
+                        Discover premium residential and commercial plots
+                        ready for your next vision.<br>
+                        Every plot is fully verified to ensure a secure acquisition.
+                    </p>
+                </div>
+
+                <div class="listing-actions">
+
+                    <button class="filter-btn">
+                        <i class="bi bi-sliders2"></i>
+                        Filter
+                    </button>
+
+                    <button class="filter-btn">
+                        <i class="bi bi-sort-down"></i>
+                        Sort
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= LAND CARDS ================= -->
+
+            <div class="row g-4">
+
+                <!-- CARD 1 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="property-card">
+
+                        <div class="property-image">
+
+                            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80"
+                                alt="600 sqm land plot">
+
+                            <span class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i>
+                                Verified
+                            </span>
+
+                            <span class="property-tag">
+                                Residential
+                            </span>
+
+                            <button class="favorite-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <h5>600 sqm Plot</h5>
+
+                            <p class="property-location">
+                                <i class="bi bi-geo-alt"></i>
+                                Ibeju-Lekki
+                            </p>
+
+                            <hr>
+
+                            <div class="property-bottom">
+
+                                <span class="property-price">
+                                    ₦25,000,000
+                                </span>
+
+                                <span class="property-size">
+                                    <i class="bi bi-bounding-box"></i>
+                                    600 SQM
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 2 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="property-card">
+
+                        <div class="property-image">
+
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
+                                alt="1000 sqm commercial land">
+
+                            <span class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i>
+                                Verified
+                            </span>
+
+                            <span class="property-tag commercial">
+                                Commercial
+                            </span>
+
+                            <button class="favorite-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <h5>1,000 sqm Plot</h5>
+
+                            <p class="property-location">
+                                <i class="bi bi-geo-alt"></i>
+                                Ikeja
+                            </p>
+
+                            <hr>
+
+                            <div class="property-bottom">
+
+                                <span class="property-price">
+                                    ₦45,000,000
+                                </span>
+
+                                <span class="property-size">
+                                    <i class="bi bi-bounding-box"></i>
+                                    1,000 SQM
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 3 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="property-card">
+
+                        <div class="property-image">
+
+                            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+                                alt="500 sqm estate land">
+
+                            <span class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i>
+                                Verified
+                            </span>
+
+                            <span class="property-tag">
+                                Estate Plot
+                            </span>
+
+                            <button class="favorite-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <h5>500 sqm Plot</h5>
+
+                            <p class="property-location">
+                                <i class="bi bi-geo-alt"></i>
+                                Epe
+                            </p>
+
+                            <hr>
+
+                            <div class="property-bottom">
+
+                                <span class="property-price">
+                                    ₦18,000,000
+                                </span>
+
+                                <span class="property-size">
+                                    <i class="bi bi-bounding-box"></i>
+                                    500 SQM
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 4 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="property-card">
+
+                        <div class="property-image">
+
+                            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=80"
+                                alt="750 sqm land">
+
+                            <span class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i>
+                                Verified
+                            </span>
+
+                            <span class="property-tag">
+                                Residential
+                            </span>
+
+                            <button class="favorite-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <h5>750 sqm Plot</h5>
+
+                            <p class="property-location">
+                                <i class="bi bi-geo-alt"></i>
+                                Sangotedo
+                            </p>
+
+                            <hr>
+
+                            <div class="property-bottom">
+
+                                <span class="property-price">
+                                    ₦30,000,000
+                                </span>
+
+                                <span class="property-size">
+                                    <i class="bi bi-bounding-box"></i>
+                                    750 SQM
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 5 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="property-card">
+
+                        <div class="property-image">
+
+                            <img src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=800&q=80"
+                                alt="850 sqm commercial plot">
+
+                            <span class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i>
+                                Verified
+                            </span>
+
+                            <span class="property-tag commercial">
+                                Commercial
+                            </span>
+
+                            <button class="favorite-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <h5>850 sqm Plot</h5>
+
+                            <p class="property-location">
+                                <i class="bi bi-geo-alt"></i>
+                                Lekki
+                            </p>
+
+                            <hr>
+
+                            <div class="property-bottom">
+
+                                <span class="property-price">
+                                    ₦38,000,000
+                                </span>
+
+                                <span class="property-size">
+                                    <i class="bi bi-bounding-box"></i>
+                                    850 SQM
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 6 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="property-card">
+
+                        <div class="property-image">
+
+                            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80"
+                                alt="400 sqm plot">
+
+                            <span class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i>
+                                Verified
+                            </span>
+
+                            <span class="property-tag">
+                                Residential
+                            </span>
+
+                            <button class="favorite-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <h5>400 sqm Plot</h5>
+
+                            <p class="property-location">
+                                <i class="bi bi-geo-alt"></i>
+                                Ajah
+                            </p>
+
+                            <hr>
+
+                            <div class="property-bottom">
+
+                                <span class="property-price">
+                                    ₦16,500,000
+                                </span>
+
+                                <span class="property-size">
+                                    <i class="bi bi-bounding-box"></i>
+                                    400 SQM
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

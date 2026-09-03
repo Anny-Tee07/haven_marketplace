@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Haven Marketplace - Sell Your Property</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="haven.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="haven.css">
     <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
 
 </head>
@@ -20,7 +20,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
         <div class="container-fluid px-3 px-lg-4">
-            <a class="navbar-brand fw-bolder" href="#">HAVEN</a>
+            <a class="navbar-brand fw-bolder" href="index.html">HAVEN</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -46,8 +46,286 @@
         </div>
     </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+
+    <section class="sell-section">
+
+        <div class="container">
+
+            <div class="text-center sell-header">
+
+                <span class="sell-eyebrow">
+                    SELL WITH HAVEN
+                </span>
+
+                <h1 class="listing-title">
+                    List Your Property
+                </h1>
+
+                <p>
+                    Reach buyers and renters looking for their next home.
+                    Tell us about your property below.
+                </p>
+
+            </div>
+
+
+            <!-- ================= FORM ================= -->
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-9">
+
+                    <div class="sell-form-card">
+
+                        <form>
+
+                            <h4 class="form-section-title">
+                                Property Information
+                            </h4>
+
+
+                            <!-- TITLE -->
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    Property Title
+                                </label>
+
+                                <input type="text" class="form-control haven-input"
+                                    placeholder="e.g. Modern 4 Bedroom Duplex">
+
+                            </div>
+
+
+                            <div class="row g-4">
+
+                                <!-- PROPERTY TYPE -->
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Property Type
+                                    </label>
+
+                                    <select class="form-select haven-input">
+
+                                        <option selected>
+                                            Select property type
+                                        </option>
+
+                                        <option>
+                                            Apartment
+                                        </option>
+
+                                        <option>
+                                            Duplex
+                                        </option>
+
+                                        <option>
+                                            House
+                                        </option>
+
+                                        <option>
+                                            Land
+                                        </option>
+
+                                        <option>
+                                            Commercial Property
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- PURPOSE -->
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Listing Purpose
+                                    </label>
+
+                                    <select class="form-select haven-input">
+
+                                        <option selected>
+                                            Select purpose
+                                        </option>
+
+                                        <option>
+                                            For Sale
+                                        </option>
+
+                                        <option>
+                                            For Rent
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- LOCATION -->
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Location
+                                    </label>
+
+                                    <input type="text" class="form-control haven-input" placeholder="e.g. Lekki, Lagos">
+
+                                </div>
+
+
+                                <!-- PRICE -->
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Price
+                                    </label>
+
+                                    <input type="number" class="form-control haven-input" placeholder="Enter price">
+
+                                </div>
+
+
+                                <!-- BEDROOM -->
+
+                                <div class="col-md-4">
+
+                                    <label class="form-label">
+                                        Bedrooms
+                                    </label>
+
+                                    <input type="number" class="form-control haven-input" placeholder="0" min="0">
+
+                                </div>
+
+
+                                <!-- BATHROOM -->
+
+                                <div class="col-md-4">
+
+                                    <label class="form-label">
+                                        Bathrooms
+                                    </label>
+
+                                    <input type="number" class="form-control haven-input" placeholder="0" min="0">
+
+                                </div>
+
+
+                                <!-- SIZE -->
+
+                                <div class="col-md-4">
+
+                                    <label class="form-label">
+                                        Property Size
+                                    </label>
+
+                                    <input type="text" class="form-control haven-input" placeholder="e.g. 350 sqm">
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- DESCRIPTION -->
+
+                            <div class="mt-4 mb-4">
+
+                                <label class="form-label">
+                                    Property Description
+                                </label>
+
+                                <textarea class="form-control haven-input" rows="6"
+                                    placeholder="Describe your property..."></textarea>
+
+                            </div>
+
+
+                            <!-- IMAGE -->
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    Property Image
+                                </label>
+
+                                <input type="file" class="form-control haven-input" accept="image/*">
+
+                                <small class="form-help">
+                                    Upload a clear image of your property.
+                                </small>
+
+                            </div>
+
+
+                            <!-- CONTACT -->
+
+                            <h4 class="form-section-title mt-5">
+                                Contact Information
+                            </h4>
+
+
+                            <div class="row g-4">
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Full Name
+                                    </label>
+
+                                    <input type="text" class="form-control haven-input" placeholder="Your name">
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Email Address
+                                    </label>
+
+                                    <input type="email" class="form-control haven-input" placeholder="you@example.com">
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Phone Number
+                                    </label>
+
+                                    <input type="tel" class="form-control haven-input" placeholder="+234...">
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="mt-5">
+
+                                <button type="submit" class="btn haven-submit-btn">
+                                    List My Property
+                                    <i class="bi bi-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
