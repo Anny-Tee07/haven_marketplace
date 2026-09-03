@@ -30,15 +30,17 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center gap-1 gap-lg-3">
-                    <li class="nav-item"><a class="nav-link fw-medium" href="#">Buy</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium" href="#">Sell</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium" href="#">Land</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium" href="#">Explore</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium" href="#">Favourites</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="buy.html">Buy</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="sell.html">Sell</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="land.html">Land</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-medium" href="index.html">Explore</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="favourites.html">Favourites</a></li>
                 </ul>
 
                 <div class="d-flex align-items-center gap-2 gap-lg-3">
-                    <button type="button" class="btn btn-dark btn-sm">List Your Property</button>
+                    <a href="property.html" class="btn btn-dark btn-sm">
+                        List Your Property
+                    </a>
                     <i class="bi bi-person fs-5"></i>
                 </div>
             </div>
@@ -72,8 +74,8 @@
                                 <input type="text" class="form-control" placeholder="e.g Lekki, Lagos state.">
                             </div>
 
-                            <div class="col-12 col-md-6 col-lg-3 d-flex flex-column flex-md-row gap-2">
-                                <div class="dropdown w-100">
+                            <div class="col-12 col-md-8 col-lg-5 d-flex flex-column flex-md-row gap-2">
+                                <div class="dropdown flex-grow-1">
                                     <button class="btn btn-light dropdown-toggle w-100 text-start" type="button"
                                         data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
                                         Property Type
@@ -86,7 +88,7 @@
                                     </ul>
                                 </div>
 
-                                <div class="dropdown w-100 d-none d-lg-block">
+                                <div class="dropdown flex-grow-1">
                                     <button class="btn btn-light dropdown-toggle w-100 text-start" type="button"
                                         data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
                                         Price Range
@@ -99,11 +101,8 @@
                                     </ul>
                                 </div>
 
-                                <div class="">
-                                    <button class="btn btn-haven w-100">Search</button>
-                                </div>
+                                <button class="btn btn-haven flex-grow-1" style="min-height: 48px;">Search</button>
                             </div>
-                            >
                         </div>
                     </div>
                 </div>
@@ -113,7 +112,7 @@
 
     <section class="featured-properties">
         <div class="container">
-            <div class="row align-items-center mb-5">
+            <div class="row align-items-center my-5">
                 <div class="col-md-8 text-start">
                     <h1 class="featured-properties1 mb-2">Featured Properties</h1>
                     <p class="featured-properties2 mb-0">Explore our handpicked selection of properties that offer
